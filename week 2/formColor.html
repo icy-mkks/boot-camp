@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootcamp Form</title>
+</head>
+<style>
+    form {
+        width: 30%;
+        background-color: rgb(165, 206, 165);
+        margin: 0 auto;
+    }
+
+    label {
+        display: inline-block;
+        width: 100px;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    textarea {
+        padding: 10px;
+        margin-left: 10%;
+        width: 250px;
+    }
+
+    div {
+        background-color: rgb(202, 233, 64);
+        border: 3px solid rgb(245, 238, 176);
+        border-radius: 20px;
+        padding: 10px;
+        margin-top: 5px;
+
+    }
+
+    input[type="submit"] {
+        background-color: rgb(69, 87, 69);
+        padding: 15px;
+        color: rgb(231, 231, 231);
+        border: none;
+        border-radius: 20px;
+        width: 150px;
+        font-size: 1.5em;
+        margin: 5% 0 5% 35%;
+        font-family: 'Times New Roman', Times, serif;
+
+    }
+
+    input[type="radio"] {
+        margin-left: 10%;
+    }
+
+    .addressBox {
+        display: flex;
+    }
+</style>
+
+<body>
+    <form action="" name="registerForm">
+        <fieldset>
+
+            <h2>Step 1: Your Details</h2>
+
+            <div>
+                <label for="Name">Name</label>
+                <input type="text" name="nameField" id="" placeholder="First Name and Last Name">
+            </div>
+            <div>
+                <label for="Name">Email</label>
+                <input type="email" name="nameField" id="" placeholder="example@domain.com">
+            </div>
+            <div>
+                <label for="Name">Phone</label>
+                <input type="text" name="nameField" id="" placeholder="eg: +9594219200">
+            </div>
+        </fieldset>
+        <fieldset>
+            <h2>Step 2: Delievery Address</h2>
+            <div class="addressBox">
+                <label for="address">Address</label>
+                <textarea name="addressField" id="" cols="30" rows="10"></textarea>
+            </div>
+            <div>
+                <label for="postcode">Post code</label>
+                <input type="text" name="postCodeField">
+            </div>
+            <div>
+                <label for="country">Country</label>
+                <input type="text" name="countryField">
+            </div>
+
+        </fieldset>
+        <fieldset>
+            <h2>Step 3: Card Details</h2>
+            <div>
+                <label for="cardType">Card Type</label>
+                <div>
+                    <input type="radio" name="cardType" id=""> Visa
+                    <input type="radio" name="cardType" id=""> AmEx
+                    <input type="radio" name="cardType" id=""> Mastercard
+
+                </div>
+
+            </div>
+            <div>
+                <label for="cardNumber">Card Number</label>
+                <input type="text" name="cardNumberField">
+
+            </div>
+            <div>
+                <label for="securityCode"> Security Code</label>
+                <input type="text" name="securityCodeField">
+
+            </div>
+            <div>
+                <label for="Name">Name on card</label>
+                <input type="text" name="nameField" id="" placeholder="Exact name as on the card">
+            </div>
+
+        </fieldset>
+        <input type="submit" value="BUY IT!">
+    </form>
+</body>
+
+</html>
